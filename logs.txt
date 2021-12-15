@@ -1,0 +1,4 @@
+1. Edit link view all | Add i tags | Module title
+2. Viewer and time | Add html | Under the video name
+3. Add list category icon | Add html | Under header
+2. Viewer and time into category page | Add html | Under the video name

@@ -1,0 +1,460 @@
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%
+}
+
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+
+
+body {
+	margin: 0
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+	display: block
+}
+audio, canvas, progress, video {
+	display: inline-block;
+	vertical-align: baseline
+}
+audio:not([controls]) {
+	display: none;
+	height: 0
+}
+[hidden], template {
+	display: none
+}
+a {
+	background-color: transparent
+}
+a:active, a:hover {
+	outline: 0;
+	text-decoration:none;
+}
+abbr[title] {
+	border-bottom: 1px dotted
+}
+b, strong {
+	font-weight: bold;
+	font-family:'Montserrat-Bold';
+}
+dfn {
+	font-style: italic
+}
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0
+}
+mark {
+	background: #ff0;
+	color: #000
+}
+small {
+	font-size: 80%
+}
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline
+}
+sup {
+	top: -0.5em
+}
+sub {
+	bottom: -0.25em
+}
+img {
+	border: 0
+}
+svg:not(:root) {
+	overflow: hidden
+}
+figure {
+	margin: 1em 40px
+}
+hr {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 0
+}
+pre {
+	overflow: auto
+}
+code, kbd, pre, samp {
+	font-family: monospace, monospace;
+	font-size: 1em
+}
+button, input, optgroup, select, textarea, search {
+	color: inherit;
+	font: inherit;
+	margin: 0
+}
+button {
+	overflow: visible
+}
+button, select {
+	text-transform: none
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer
+}
+button[disabled], html input[disabled] {
+	cursor: default
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+border:0;
+padding:0
+}
+input {
+	line-height: normal
+}
+input[type="checkbox"], input[type="radio"] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0
+}
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+height:auto
+}
+input[type="search"] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box
+}
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+-webkit-appearance:none
+}
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em
+}
+legend {
+	border: 0;
+	padding: 0
+}
+textarea {
+	overflow: auto
+}
+optgroup {
+	font-weight: bold
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+td, th {
+	padding: 0
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.1;
+	color: inherit
+}
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
+	font-weight: normal;
+	line-height: 1;
+	color: #777
+}
+h1, .h1, h2, .h2, h3, .h3 {
+	margin-top: 20px;
+	margin-bottom: 10px
+}
+h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h1 .small, .h1 .small, h2 .small, .h2 .small, h3 .small, .h3 .small {
+	font-size: 65%
+}
+h4, .h4, h5, .h5, h6, .h6 {
+	margin-top: 10px;
+	margin-bottom: 10px
+}
+h4 small, .h4 small, h5 small, .h5 small, h6 small, .h6 small, h4 .small, .h4 .small, h5 .small, .h5 .small, h6 .small, .h6 .small {
+	font-size: 75%
+}
+h1, .h1 {
+	font-size: 36px
+}
+h2, .h2 {
+	font-size: 30px
+}
+h3, .h3 {
+	font-size: 24px
+}
+h4, .h4 {
+	font-size: 18px
+}
+h5, .h5 {
+	font-size: 14px
+}
+h6, .h6 {
+	font-size: 12px
+}
+p {
+	margin: 0 0 10px
+}
+
+/********************************Link********************************/
+a:link,a:visited{ text-decoration: none; font-size: inherit; font-family: inherit;}	
+a:hover,a:active{ text-decoration: underline; font-size: inherit; font-family: inherit;}
+
+a.link_dft:link,a.link_dft:visited{ text-decoration: underline; font-size: inherit; font-family: inherit;}	
+a.link_dft:hover,a.link_dft:active{ text-decoration: none; font-size: inherit; font-family: inherit; }
+
+/********************************Color********************************/
+.color-1 { color:#ffffff !important;}
+.color-2 { color:#000000 !important;}
+.color-3 { color:#0099cc !important;}
+.color-4 { color:#989797 !important;}
+.color-5 { color:#ed6d06 !important;}
+.color-6 { color:#00918d !important;}
+.color-7 { color:#635e51 !important;}
+.color-8 { color:#a1acac !important;}
+.color-9 { color:#d78531 !important;}
+.color-10 { color:#0b2473 !important;}
+.color-11 { color:#b60002 !important;}
+.color-12 { color:#659dbc !important;}
+
+.pull-left { float:  left !important;}
+.pull-center { float:  none !important;}
+.pull-right { float:  right !important;}
+
+.reset-margin { margin:0 !important;}
+.reset-padding { padding:0 !important;}
+.reset-width { width:auto !important;}
+.reset-height { height:auto !important;}
+.reset-background { background:none !important;}
+
+.reset-boder { border:0!important;}
+.reset-ol, .reset-ul { list-style:none;	margin:0; padding:0;}
+
+.align-left { text-align:left !important;}
+.align-center { text-align:left !important;}
+.align-right { text-align:right !important;}
+.valign-top { vertical-align:top !important;}
+.valign-middle { vertical-align:middle !important;}
+.valign-bottom { vertical-align:bottom !important;}
+
+.text-transparent {color:rgba(0,0,0,0.00);}
+.text-bold { font-weight: bold !important;}
+.text-italic { font-style:italic !important;}
+.text-normal { font-weight: normal !important;}
+.text-size-12 { font-size:12px !important;}
+.text-size-14 { font-size:14px !important;}
+.text-size-10 { font-size:10px !important;}
+.text-size-18 { font-size:18px !important;}
+
+.clear {display:block; height:0px; width:100%; clear:both; line-height:0px; font-size:0px;}
+.clear-10 {display:block; height:10px; width:100%; clear:both; line-height:1px; font-size:1px;}
+.clear-20 {display:block; height:1px; width:100%; clear:both; line-height:1px; font-size:1px;}
+
+*{box-sizing: border-box;}
+*::before, *::after { box-sizing: border-box; }
+*::before, *::after { box-sizing: border-box; }
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 1030
+}
+
+.navbar-fixed-top {
+	top: 0;
+	border-width: 0 0 1px
+}
+
+.navbar-fixed-bottom {
+	bottom: 0;
+	margin-bottom: 0;
+	border-width: 1px 0 0
+}
+
+.ellipsis {
+	width:100%;
+	text-overflow: ellipsis;
+	/* Required for text-overflow to do anything */
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.img-circle {
+	border-radius: 50%
+}
+
+
+/***********Icon-font**************/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?lz6gcm');
+  src:  url('../fonts/icomoon.eot?lz6gcm#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?lz6gcm') format('truetype'),
+    url('../fonts/icomoon.woff?lz6gcm') format('woff'),
+    url('../fonts/icomoon.svg?lz6gcm#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"],.mdl-list .fa-play,.mdl-default .fa-play{
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-delete:before {
+  content: "\e913";
+}
+.icon-play-outline:before {
+  content: "\e911";
+}
+.icon-play-solid:before {
+  content: "\e912";
+}
+.icon-add:before {
+  content: "\e900";
+}
+.icon-camera:before {
+  content: "\e901";
+}
+.icon-camera-film:before {
+  content: "\e902";
+}
+.icon-comment:before {
+  content: "\e903";
+}
+.icon-contact:before {
+  content: "\e904";
+}
+.icon-check:before {
+  content: "\e905";
+}
+.icon-eye:before {
+  content: "\e906";
+}
+.icon-fire:before {
+  content: "\e907";
+}
+.icon-flag:before {
+  content: "\e908";
+}
+.icon-gear:before {
+  content: "\e909";
+}
+.icon-mobile:before {
+  content: "\e90a";
+}
+.icon-more-h:before {
+  content: "\e90b";
+}
+.icon-play:before {
+  content: "\e90c";
+}
+.icon-search:before {
+  content: "\e90d";
+}
+.icon-share:before {
+  content: "\e90e";
+}
+.icon-video:before {
+  content: "\e90f";
+}
+.icon-watch:before {
+  content: "\e910";
+}
+
+/* @font-face {
+  font-family: 'icomoon_2';
+  src:  url('../fonts/icomoon_2.eot?5grffj');
+  src:  url('../fonts/icomoon_2.eot?5grffj#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon_2.ttf?5grffj') format('truetype'),
+    url('../fonts/icomoon_2.woff?5grffj') format('woff'),
+    url('../fonts/icomoon_2.svg?5grffj#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: 'icomoon_2';
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'),
+    url('../fonts/fontawesome-webfont.woff2?v=4.6.3') format('woff2'),
+    url('../fonts/fontawesome-webfont.woff?v=4.6.3') format('woff'),
+    url('../fonts/fontawesome-webfont.ttf?v=4.6.3') format('truetype'),
+    url('../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+[class^="icon2-"], [class*=" icon2-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon_2' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon2-author-mybolero:before {
+  content: "\e909";
+}
+.icon2-micro-mybolero:before {
+  content: "\e90a";
+}
+.icon2-cart:before {
+  content: "\e900";
+}
+.icon2-gear:before {
+  content: "\e901";
+}
+.icon2-account-5dmax:before {
+  content: "\e902";
+}
+.icon2-episode-5dmax:before {
+  content: "\e903";
+}
+.icon2-film-5dmax:before {
+  content: "\e904";
+}
+.icon2-home-5dmax:before {
+  content: "\e907";
+}
+.icon2-list-5dmax:before {
+  content: "\e906";
+}
+.icon2-logout-5dmax:before {
+  content: "\e908";
+}
+.icon2-package-5dmax:before {
+  content: "\e90a";
+}
+
+a:link, a {
+	outline: 0 !important;
+}
+
+a:active, a:visited, a:hover, :focus {
+	outline: 0 !important;
+	text-decoration:none;
+}
