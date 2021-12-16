@@ -1,0 +1,160 @@
+body, .mdl-header {
+  background-color: #D61B1B;
+}
+
+/********************************************************/
+/********************************************************/
+/*MDL-HEADER*/
+/**/
+.mdl-header {
+  background-image: url(./images/Snow_mobile.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 100% 12px;
+}
+
+.mdl-header .container {
+  background-image: url(./images/Header_sky.svg);
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  background-size: 355px 44px;
+  height: 50px;
+}
+
+.mdl-header .logo {
+  display: inline-block;
+  width: 187px;
+  height: 42px;
+  background: url(./images/Logo.svg) no-repeat 0 0;
+  background-size: 187px 42px;
+  vertical-align: middle;
+  margin: 7px 0 0 0;
+}
+
+.mdl-header .logo::after {
+  width: 80px;
+  height: 33px;
+  display: inline-block;
+  content: "";
+  background-image: url(./images/New_year_text.svg);
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  background-size: 80px 33px;
+  position: relative;
+  right: -159px;
+  top: 5px;
+}
+
+.sub-info {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.mdl-list-category .item {
+  color: #fff;
+}
+
+.mdl-list-category .item:hover {
+  color: #FFCB3B;
+}
+
+#hamburger::before, #hamburger::after, #hamburger span {
+  background-color: #fff;
+}
+
+.mdl-header .right-header .btn-search .fa-search {
+  color: #fff;
+}
+
+.btn-register-bottom {
+  display: none;
+}
+
+/********************************************************/
+/********************************************************/
+/*MDL-FOOTER*/
+/**/
+body {
+  background-repeat: repeat-x;
+  background-image: url(./images/Footer_sky.svg);
+  background-size: auto 200px;
+  background-position: bottom;
+}
+
+.mdl-footer {
+  background-color: transparent;
+  background-image: url(./images/Footer_big_bg.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  position: relative;
+  background-size: auto 200px;
+}
+
+.mdl-footer::after, .mdl-footer::before {
+  position: absolute;
+  width: 180px;
+  height: 200px;
+  bottom: 0;
+  background-repeat: no-repeat;
+  display: inline-block;
+  content: "";
+  background-size: 180px 200px;
+}
+
+.mdl-footer::before {
+  width: 195px;
+  left: 0;
+  background-image: url(./images/Footer_left.png);
+  background-size: 195px 200px;
+}
+
+.mdl-footer::after {
+  right: 0;
+  background-image: url(./images/Footer_right.png);
+}
+
+.mdl-footer .container {
+  padding-bottom: 150px;
+}
+
+.mdl-footer .container::after, .mdl-footer .container::before {
+  position: absolute;
+  background-repeat: no-repeat;
+  display: inline-block;
+  content: "";
+  left: 50%;
+}
+
+.mdl-footer .container::before {
+  width: 120px;
+  margin-left: calc(-120px/2);
+  height: 50px;
+  background-image: url(./images/New_year_text.svg);
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  background-size: 120px 50px;
+  bottom: 120px;
+}
+
+.mdl-footer .container::after {
+  width: 57px;
+  height: 90px;
+  bottom: 15px;
+  margin-left: calc(-57px/2);
+  background-image: url(./images/Tree.svg);
+  z-index: 3;
+}
+
+.mdl-footer .txt-1, .mdl-footer .logo-gov {
+  opacity: 1;
+}
+
+@media (min-width: 769px) {
+  body {
+    background-image: none;
+  }
+  .mdl-footer .txt-1 {
+    width: 37%;
+    margin-right: 20%;
+  }
+}
+/*# sourceMappingURL=noel.css.map */
