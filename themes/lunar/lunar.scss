@@ -1,0 +1,212 @@
+$color-1: #D61B1B;
+$color-2: #E5E5E5;
+$color-3: #FFCB3B;
+$white: #fff;
+$black: #000;
+
+.mdl-header{
+	background-color: $color-1;
+}
+
+/********************************************************/
+/********************************************************/
+/*MDL-HEADER*/
+/**/
+
+.mdl-header{
+	background: rgb(255,35,39);
+    background: radial-gradient(circle, rgba(255,35,39,1) 0%, rgba(211,27,27,1) 100%);
+    .container{
+        background-repeat: repeat;
+        background-size: 57px 48px;
+        height: 50px;
+        z-index: 2;
+        &::after{
+            position: absolute;
+            background-repeat: no-repeat;
+            display: inline-block;
+            content: "";
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            background-image: url(./images/bg-pattern.png);
+            background-repeat: repeat;
+            background-size: 57px 48px;
+            z-index: 0;
+        }    
+    }
+    .logo{
+        display: inline-block;
+        width: 194px;
+        height: 48px;
+        background: url(./images/Logo.png) no-repeat;
+        background-size: 194px 48px;
+        vertical-align: middle;
+        margin: 1px 0 0 0;
+        &::after{
+            width: 84px;
+            height: 35px;
+            display: inline-block;
+            content: "";
+            background-image: url(./images/New_year_text.svg);
+            background-repeat: repeat-x;
+            background-position: left bottom;
+            background-size: 84px 35px;
+            position: relative;
+            right: -140px;
+            top: 9px;
+        }
+    }
+    .logo, .icon-menu-bar, .right-header{
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.sub-info{
+    color: rgba($color: $white, $alpha: .4);
+}
+
+.mdl-list-category {
+    .item {
+        color: $white;
+        &:hover{
+            color: $color-3;
+        }
+    }
+}
+
+#hamburger{
+    &::before,&::after, span{
+        background-color: $white;
+    }
+}
+
+.mdl-header{ 
+    .right-header {
+        .btn-search {   
+            .fa-search{
+                color: $white;
+            }
+        }
+    }
+}
+
+.btn-register-bottom{
+    display: none;
+}
+
+/********************************************************/
+/********************************************************/
+/*MDL-FOOTER*/
+/**/
+
+
+.mdl-footer{
+    position: relative;
+    background: rgb(239,46,49);
+    background: radial-gradient(circle, rgba(239,46,49,1) 0%, rgba(164,0,0,1) 100%);
+    &::after{
+        position: absolute;
+        background-repeat: no-repeat;
+        display: inline-block;
+        content: "";
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-image: url(./images/bg-pattern.png);
+        background-repeat: repeat;
+        background-size: 57px 48px;
+        z-index: 0;
+    }    
+    .container{
+        position: relative;
+        z-index: 2;
+        padding-bottom: 150px;
+        &::after,&::before{
+            position: absolute;
+            background-repeat: no-repeat;
+            display: inline-block;
+            content: "";
+            left: 50%;
+        }
+        &::before{
+            width: 140px;
+            margin-left: calc(-140px/2);
+            height: 58px;
+            background-image: url(./images/New_year_text.svg);
+            background-repeat: repeat-x;
+            background-position: left bottom;
+            background-size: 140px 58px;
+            bottom: 90px;
+        }
+        &::after{
+            width: 151px;
+            height: 89px;
+            bottom: 0;
+            margin-left: calc(-140px/2);
+            background-image: url(./images/Footer-flower.png);
+            z-index: 3;
+        }
+    }
+    .txt-1, .logo-gov{
+        opacity: 1;
+    }
+}
+
+
+@media (min-width:769px) {
+    body{
+        background-image: none;
+    }
+    .mdl-footer {
+        .txt-1{
+            width:37%;
+            margin-right: 20%;
+        }
+        .container{
+            &::before{
+                bottom: 60px;
+            }
+            &::after{
+                bottom: -25px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 980px){
+    html body.lm-open .mdl-header{
+        background: rgb(255,35,39);
+        background: radial-gradient(circle, rgba(255,35,39,1) 0%, rgba(211,27,27,1) 100%);
+    }
+
+    .mdl-footer{
+        &::after{
+            background-image: url(./images/bg-pattern@3x.png);
+        }
+        .container{
+            &::after{
+                background-image: url(./images/Footer-flower@3x.png);
+                background-size: 151px 89px;
+            }
+        }
+    }
+
+    .mdl-header{
+        .logo{
+            background: url(./images/Logo@3x.png) no-repeat;
+            background-size: 194px 48px;
+        }
+        .container{
+            &::after{
+                background-image: url(./images/bg-pattern@3x.png);
+            }
+        }
+    }
+
+
+}
+
